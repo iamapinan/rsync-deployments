@@ -51,7 +51,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: rsync deployments
-      uses: iamapinan/rsync-deployments@1.0
+      uses: iamapinan/rsync-deployments-with-ssh-command@1.0
       with:
         switches: -avzr --delete
         path: src/
@@ -70,7 +70,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: rsync deployments
-      uses: iamapinan/rsync-deployments@1.0
+      uses: iamapinan/rsync-deployments-with-ssh-command@1.0
       with:
         switches: -avzr --delete --exclude="" --include="" --filter=""
         path: src/
