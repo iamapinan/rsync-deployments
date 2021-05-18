@@ -1,4 +1,4 @@
-# rsync deployments
+# rsync deployments with ssh command
 
 This GitHub Action deploys files in `GITHUB_WORKSPACE` to a remote folder via rsync over ssh. 
 
