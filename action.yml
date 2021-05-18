@@ -1,6 +1,6 @@
-name: 'Rsync Deployments Action'
-description: 'GitHub Action for deploying code via rsync over ssh'
-author: 'Burnett01'
+name: 'Rsync Deployments Action with Remote Command'
+description: 'GitHub Action for deploying code via rsync over ssh and send a remote command.'
+author: 'Apinan'
 inputs:
   switches:
     description: 'The switches'
@@ -29,6 +29,9 @@ inputs:
   remote_key:
     description: 'The remote key'
     required: true
+  remote_command:
+    description: 'The remote ssh command'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
